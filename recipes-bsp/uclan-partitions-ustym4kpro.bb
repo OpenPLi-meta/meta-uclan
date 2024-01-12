@@ -16,11 +16,11 @@ SRC_URI = "\
     file://logo.img \
 "
 
-ALLOW_EMPTY_${PN} = "1"
+ALLOW_EMPTY:${PN} = "1"
 do_configure[nostamp] = "1"
 do_install[noexec] = "1"
 
-FILES_${PN} = "/usr/share"
+FILES:${PN} = "/usr/share"
 
 do_deploy() {
     install -d ${DEPLOY_DIR_IMAGE}/${MACHINE}-partitions
@@ -40,4 +40,4 @@ addtask deploy before do_build after do_install
 SRC_URI[md5sum] = "5594e79f9834effcb14777eb6a2a516e"
 SRC_URI[sha256sum] = "f0bcca64102e99f04fdc87c379bf7a80a3625d5c7d22a245e06da4807a033797"
 
-INSANE_SKIP_${PN} += "already-stripped"
+INSANE_SKIP:${PN} += "already-stripped"

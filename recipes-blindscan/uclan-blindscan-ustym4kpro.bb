@@ -23,7 +23,7 @@ do_install() {
 do_package_qa() {
 }
 
-FILES_${PN}  = "${bindir}/uclan-blindscan"
+FILES:${PN}  = "${bindir}/uclan-blindscan"
 
 SRC_URI[md5sum] = "ee98e5c30d36a7afaff364e6015e0956"
 SRC_URI[sha256sum] = "2eb583117f45a5e7d88a2843ff60ba7cf2420deb1987af83ae6299b8433a21ba"
