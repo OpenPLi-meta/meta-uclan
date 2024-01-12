@@ -16,7 +16,7 @@ SRC_URI = "\
     file://logo.img \
 "
 
-ALLOW_EMPTY_${PN} = "1"
+ALLOW_EMPTY:${PN} = "1"
 do_configure[nostamp] = "1"
 do_install[noexec] = "1"
 
@@ -39,4 +39,4 @@ addtask deploy before do_build after do_install
 SRC_URI[md5sum] = "e5bcfb23c425ba7c450aa656499cafad"
 SRC_URI[sha256sum] = "9937a28c64ea9af1e2047f6ca8866061de03b6df31b4574dc639e156027b3300"
 
-INSANE_SKIP_${PN} += "already-stripped"
+INSANE_SKIP:${PN} += "already-stripped"
