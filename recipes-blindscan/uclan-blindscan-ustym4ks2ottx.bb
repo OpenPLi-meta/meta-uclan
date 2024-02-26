@@ -11,7 +11,7 @@ SRCDATE = "20230217"
 PV = "${SRCDATE}"
 PR = "r0"
 
-SRC_URI  = "http://define-sw.dyndns.tv/openatv/openpli/${MACHINE}-blindscan-${SRCDATE}.zip"
+SRC_URI  = "https://define-sw.dyndns.tv/openatv/openpli/${MACHINE}-blindscan-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 
