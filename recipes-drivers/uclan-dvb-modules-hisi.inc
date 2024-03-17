@@ -5,9 +5,8 @@ LICENSE = "CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 PV = "${KV}+${SRCDATE}"
-PR = "r1"
 
-SRC_URI = "https://source.mynonpublic.com/uclan/${MACHINE}-hiko-${SRCDATE}.zip \
+SRC_URI = "http://define-sw.dyndns.tv/openatv/openpli/${MACHINE}-hiko-${SRCDATE}.zip \
     file://modules \
 "
 
