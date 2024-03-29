@@ -6,13 +6,13 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 inherit deploy
 
-SRCDATE = "20220424"
+SRCDATE = "20220326"
 PR = "${SRCDATE}"
 
 S = "${WORKDIR}/patitions"
 
 SRC_URI = "\
-    http://define-sw.dyndns.tv/openatv/openpli/${MACHINE}-partitions-${SRCDATE}.zip \
+    https://source.mynonpublic.com/uclan/${MACHINE}-partitions-${SRCDATE}.zip \
     file://logo.img \
 "
 
@@ -37,7 +37,7 @@ do_deploy() {
 
 addtask deploy before do_build after do_install
 
-SRC_URI[md5sum] = "5594e79f9834effcb14777eb6a2a516e"
-SRC_URI[sha256sum] = "f0bcca64102e99f04fdc87c379bf7a80a3625d5c7d22a245e06da4807a033797"
+SRC_URI[md5sum] = "a43f9f0c79a4d898c019091eb72cb7f2"
+SRC_URI[sha256sum] = "450af10ee881976b50f78896a4989903104826729b4ca9bc75edfada359a656b"
 
 INSANE_SKIP_${PN} += "already-stripped"

@@ -9,7 +9,7 @@ PR = "${SRCDATE}"
 PROVIDES = "virtual/libgles1 virtual/libgles2 virtual/egl"
 RPROVIDES_${PN} = "virtual/libgles1 virtual/libgles2 virtual/egl libEGL.so libGLESv2.so libmali.so"
 
-SRC_URI = "http://define-sw.dyndns.tv/openatv/openpli/${MACHINE}-opengl-${SRCDATE}.tar.gz"
+SRC_URI = "https://source.mynonpublic.com/uclan/${SOC_FAMILY}-opengl-${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}/usr"
 

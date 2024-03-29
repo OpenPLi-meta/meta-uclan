@@ -6,7 +6,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 RDEPENDS_${PN} = "harfbuzz"
 
-SRCDATE = "20220411"
+SRCDATE = "20220326"
 
 PV = "${SRCDATE}"
 PR = "r1"
@@ -15,7 +15,7 @@ INITSCRIPT_NAME = "suspend"
 INITSCRIPT_PARAMS = "start 89 0 ."
 inherit update-rc.d
 
-SRC_URI  = "http://define-sw.dyndns.tv/openatv/openpli/${MACHINE}-hihalt-${SRCDATE}.tar.gz \
+SRC_URI  = "https://source.mynonpublic.com/uclan/${SOC_FAMILY}-hihalt-${SRCDATE}.tar.gz \
     file://suspend.sh \
     file://standby_leave.sh \
     file://standby_enter.sh \
@@ -38,7 +38,7 @@ do_package_qa() {
 
 FILES_${PN}  = "${bindir}/hihalt ${sysconfdir}/init.d /usr/script"
 
-SRC_URI[md5sum] = "b0a55768a2df8651c4a5e47d66749356"
-SRC_URI[sha256sum] = "cd1fb899c677336f7a6d1a69ff7f38bb2b4eb74d7194bba69cd41b4e7b1cba73"
+SRC_URI[md5sum] = "a6c47491393917654c43188d4831e7fc"
+SRC_URI[sha256sum] = "74e98134d4adff0f0bf942d66f1933333df33e96892b9dd88660361ef77f5090"
 
 
