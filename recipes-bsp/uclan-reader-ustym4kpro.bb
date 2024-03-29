@@ -8,12 +8,12 @@ RDEPENDS:${PN} = "libsdl"
 
 COMPATIBLE_MACHINE = "^(ustym4kpro)$"
 
-SRCDATE = "20200703"
+SRCDATE = "20221220"
 
 PV = "${SRCDATE}"
 PR = "r0"
 
-SRC_URI = "https://define-sw.dyndns.tv/openatv/openpli/${MACHINE}-libreader-${SRCDATE}.tar.gz"
+SRC_URI = "https://source.mynonpublic.com/uclan/${MACHINE}-libreader-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 
@@ -27,5 +27,5 @@ do_package_qa() {
 
 FILES:${PN}  = "${bindir}/libreader"
 
-SRC_URI[md5sum] = "7f08f503a8480baa666ea566cfd89306"
-SRC_URI[sha256sum] = "2321fba9f22335a8cb13f385b18f898e3de7ea81849e14565a176b937cdcfb60"
+SRC_URI[md5sum] = "9f500f357e10eb3191f4c9f9736c2a50"
+SRC_URI[sha256sum] = "1cd12c99cd87366d6261f6647cc0e27f97aa31b3e4c52f9a354dd24145e7771c"
