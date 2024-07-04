@@ -35,6 +35,7 @@ SRC_URI += "https://source.mynonpublic.com/uclan/uclan-linux-${PV}-${SRCDATE}.ta
     file://wifi-linux_4.4.183.patch \
     file://fix-dvbcore-buffer-read.patch \
     file://make-yyloc-declaration-extern.patch \
+    file://fix-build-with-binutils-2.41.patch \
 "
 
 S = "${WORKDIR}/linux-${PV}"
