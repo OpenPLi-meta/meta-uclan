@@ -10,9 +10,7 @@ inherit kernel machine_kernel_pr
 
 MACHINE_KERNEL_PR:append = ".8"
 
-SRC_URI[md5sum] = "9c400b45c9bc7949c97ddb5bf6714b1e"
-SRC_URI[sha256sum] = "e5604bb3576ead02b23861b0dde082a2b219fe7a622d973f7a52aaafbc56f7bb"
-
+SRC_URI[mv300.sha256sum] = "e5604bb3576ead02b23861b0dde082a2b219fe7a622d973f7a52aaafbc56f7bb"
 
 # By default, kernel.bbclass modifies package names to allow multiple kernels
 # to be installed in parallel. We revert this change and rprovide the versioned
@@ -22,7 +20,7 @@ PKG:${KERNEL_PACKAGE_NAME}-image = "kernel-image"
 RPROVIDES:${KERNEL_PACKAGE_NAME}-base = "kernel-${KERNEL_VERSION}"
 RPROVIDES:${KERNEL_PACKAGE_NAME}-image = "kernel-image-${KERNEL_VERSION}"
 
-SRC_URI += "https://define-sw.dyndns.tv/openatv/openpli/uclan-linux-${PV}-${SRCDATE}.tar.gz \
+SRC_URI += "https://source.mynonpublic.com/uclan/uclan-linux-${PV}-${SRCDATE}.tar.gz;name=mv300 \
     file://defconfig \
     file://initramfs-subdirboot.cpio.gz;unpack=0 \
     file://findkerneldevice.sh \
