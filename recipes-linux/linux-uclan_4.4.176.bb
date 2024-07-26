@@ -10,6 +10,7 @@ inherit kernel machine_kernel_pr
 
 MACHINE_KERNEL_PR:append = ".8"
 
+SRC_URI[mv300.md5sum] = "9c400b45c9bc7949c97ddb5bf6714b1e"
 SRC_URI[mv300.sha256sum] = "e5604bb3576ead02b23861b0dde082a2b219fe7a622d973f7a52aaafbc56f7bb"
 
 # By default, kernel.bbclass modifies package names to allow multiple kernels
