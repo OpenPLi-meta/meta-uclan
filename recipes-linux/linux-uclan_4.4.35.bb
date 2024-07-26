@@ -36,6 +36,8 @@ SRC_URI += "https://source.mynonpublic.com/uclan/uclan-linux-${PV}-${SRCDATE}.ta
     file://fix-build-with-binutils-2.41.patch \
 "
 
+COMPATIBLE_MACHINE = "ustym4kpro"
+
 S = "${WORKDIR}/linux-${PV}"
 B = "${WORKDIR}/build"
 
