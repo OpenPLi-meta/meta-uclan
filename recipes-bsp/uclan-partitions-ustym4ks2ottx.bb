@@ -11,9 +11,8 @@ PR = "${SRCDATE}"
 
 S = "${WORKDIR}/partitions"
 
-SRC_URI = "\
-    https://define-sw.dyndns.tv/openatv/openpli/${MACHINE}-partitions-${SRCDATE}.zip \
-    file://logo.img \
+SRC_URI = "https://source.mynonpublic.com/uclan/${MACHINE}-partitions-${SRCDATE}.zip \
+           file://logo.img \
 "
 
 ALLOW_EMPTY:${PN} = "1"
