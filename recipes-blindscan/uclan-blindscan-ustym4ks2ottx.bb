@@ -11,7 +11,7 @@ SRCDATE = "20230217"
 PV = "${SRCDATE}"
 PR = "r0"
 
-SRC_URI  = "https://define-sw.dyndns.tv/openatv/openpli/${MACHINE}-blindscan-${SRCDATE}.zip"
+SRC_URI  = "https://source.mynonpublic.com/uclan/${SOC_FAMILY}-blindscan-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 
@@ -25,8 +25,8 @@ do_package_qa() {
 
 FILES:${PN}  = "${bindir}/uclan-blindscan"
 
-SRC_URI[md5sum] = "3bd15408ccafffc5752b6bfe874a2fc6"
-SRC_URI[sha256sum] = "4d8996c90cb957711c241c292d62dcdeaecf3d2aacc1281148a66f0517580fb9"
+SRC_URI[md5sum] = "f02887e83991ea61ca63e4eb6ae1787a"
+SRC_URI[sha256sum] = "c628e088e0547d8b81b39347df3c5b3347110aaba69242fb444b79e12953f7c8"
 
 do_prepare_recipe_sysroot[noexec] = "1"
 INHIBIT_PACKAGE_STRIP = "1"
