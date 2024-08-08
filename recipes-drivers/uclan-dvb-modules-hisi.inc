@@ -6,9 +6,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 PV = "${KV}+${SRCDATE}"
 
-SRC_URI = "https://source.mynonpublic.com/uclan/${MACHINE}-hiko-${SRCDATE}.zip \
-    file://modules \
-"
+SRC_URI:append = " file://modules"
 
 S = "${WORKDIR}/hiko"
 
