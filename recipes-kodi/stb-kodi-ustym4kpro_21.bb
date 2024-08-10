@@ -1,6 +1,6 @@
-require recipes-mediacenter/kodi/stb-kodi_21.bb
+require recipes-mediacenter/kodi/stb-kodi_${PV}.bb
 
-SRC_URI:append = "file://hiplayer-21.patch"
+SRC_URI:append = "file://hiplayer-21.patch;apply=no"
 
 DEPENDS += "uclan-libs-${MACHINE}"
 PROVIDES += "virtual/kodi kodi"
