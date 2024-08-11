@@ -66,7 +66,7 @@ PREFERRED_PROVIDER_virtual/kernel = "linux-uclan"
 PREFERRED_PROVIDER_virtual/egl = "uclan-opengl-${MACHINE}" 
 PREFERRED_PROVIDER_virtual/libgles1 = "uclan-opengl-${MACHINE}"
 PREFERRED_PROVIDER_virtual/libgles2 = "uclan-opengl-${MACHINE}"
-PREFERRED_PROVIDER_virtual/kodi = "stb-kodi-${MACHINE"
+PREFERRED_PROVIDER_virtual/kodi = "stb-kodi-${MACHINE}"
 PREFERRED_PROVIDER_virtual/blindscan-dvbs = "uclan-blindscan-${MACHINE}"
 
 PREFERRED_RPROVIDER_showiframe = "uclan-showiframe-${MACHINE}"
