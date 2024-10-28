@@ -15,7 +15,7 @@ RPROVIDES:${PN}  = "showiframe"
 RREPLACES:${PN}  = "showiframe"
 RCONFLICTS:${PN} = "showiframe"
 
-SRC_URI = "https://source.mynonpublic.com/uclan/${SOC_FAMILY}-showiframe-${SRCDATE}.tar.gz"
+SRC_URI = "http://downloads.openpli.org/archive/uclan/${SOC_FAMILY}-showiframe-${SRCDATE}.tar.gz"
 
 S = "${WORKDIR}"
 

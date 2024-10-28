@@ -11,7 +11,7 @@ SRCDATE = "20230217"
 PV = "${SRCDATE}"
 PR = "r0"
 
-SRC_URI  = "https://source.mynonpublic.com/uclan/${SOC_FAMILY}-blindscan-${SRCDATE}.zip"
+SRC_URI  = "http://downloads.openpli.org/archive/uclan/${SOC_FAMILY}-blindscan-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 

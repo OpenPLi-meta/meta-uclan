@@ -20,7 +20,7 @@ SRC_URI[sha256sum] = "0654d5aa21c51eaea46f7203014afe60052ec0990a92b9e289e1ca8a27
 RPROVIDES:${KERNEL_PACKAGE_NAME}-base = "kernel-${KERNEL_VERSION}"
 RPROVIDES:${KERNEL_PACKAGE_NAME}-image = "kernel-image-${KERNEL_VERSION}"
 
-SRC_URI += "https://source.mynonpublic.com/uclan/uclan-linux-${PV}-${SRCDATE}.tar.gz \
+SRC_URI += "http://downloads.openpli.org/archive/uclan/uclan-linux-${PV}-${SRCDATE}.tar.gz \
     file://defconfig \
     file://0001-remote.patch \
     file://HauppaugeWinTV-dualHD.patch \

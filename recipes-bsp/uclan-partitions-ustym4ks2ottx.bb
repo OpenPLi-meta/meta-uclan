@@ -11,7 +11,7 @@ PR = "${SRCDATE}"
 
 S = "${WORKDIR}/partitions"
 
-SRC_URI = "https://source.mynonpublic.com/uclan/${MACHINE}-partitions-${SRCDATE}.zip \
+SRC_URI = "http://downloads.openpli.org/archive/uclan/${MACHINE}-partitions-${SRCDATE}.zip \
            file://logo.img \
 "
 
