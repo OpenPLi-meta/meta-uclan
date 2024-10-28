@@ -13,7 +13,7 @@ SRCDATE = "20221220"
 PV = "${SRCDATE}"
 PR = "r0"
 
-SRC_URI = "https://source.mynonpublic.com/uclan/${MACHINE}-libreader-${SRCDATE}.zip"
+SRC_URI = "http://downloads.openpli.org/archive/uclan/${MACHINE}-libreader-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 
