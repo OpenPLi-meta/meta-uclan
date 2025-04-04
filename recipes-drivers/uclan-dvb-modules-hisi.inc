@@ -6,7 +6,9 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 PV = "${KV}+${SRCDATE}"
 
-SRC_URI:append = " file://modules"
+SRC_URI = "http://downloads.openpli.org/archive/uclan/${MACHINE}-hiko-${SRCDATE}.zip \
+    file://modules \
+"
 
 S = "${WORKDIR}/hiko"
 
