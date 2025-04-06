@@ -10,9 +10,7 @@ inherit kernel machine_kernel_pr
 
 MACHINE_KERNEL_PR_append = ".8"
 
-SRC_URI[md5sum] = "9c400b45c9bc7949c97ddb5bf6714b1e"
 SRC_URI[sha256sum] = "e5604bb3576ead02b23861b0dde082a2b219fe7a622d973f7a52aaafbc56f7bb"
-
 
 # By default, kernel.bbclass modifies package names to allow multiple kernels
 # to be installed in parallel. We revert this change and rprovide the versioned
